@@ -8,7 +8,7 @@ public class Main {
         int originalNumber = number;
         while(number !=0 ){
             int digit = number % 10;
-            reversedNumber = reversedNumber * 10 + digit;
+            reversedNumber = (reversedNumber * 10) + digit;
             number /= 10;
         }
         return originalNumber == reversedNumber;
